@@ -94,7 +94,7 @@ button {
          -webkit-animation: animatedBackground_b 3s linear infinite alternate;
       }
       #redrainbow
-         -webkit-animation: animatedBackground_b 3s linear infinite alternate;
+         -webkit-animation: animatedBackground_red 3s linear infinite alternate;
       }
 /* rainbows */
 @keyframes animatedBackground_b{
@@ -111,7 +111,7 @@ button {
     100% {color: #ff0000}
 }
 /* official rainbows for red */
-@keyframes animatedBackground_b{
+@keyframes animatedBackground_red{
     0% {color: #FF0000}
     10% {color: #DC143C}
     20% {color: #B22222}
