@@ -93,6 +93,9 @@ button {
       #rainbowsgod{
          -webkit-animation: animatedBackground_b 3s linear infinite alternate;
       }
+      #redrainbow
+         -webkit-animation: animatedBackground_b 3s linear infinite alternate;
+      }
 /* rainbows */
 @keyframes animatedBackground_b{
     0% {color: #ff8b00}
@@ -106,6 +109,20 @@ button {
     80% {color: #e800ff}
     90% {color: #ff008b}
     100% {color: #ff0000}
+}
+/* official rainbows for red */
+@keyframes animatedBackground_b{
+    0% {color: #FF0000}
+    10% {color: #DC143C}
+    20% {color: #B22222}
+    30% {color: #E9967A}
+    40% {color: #FF0800}
+    50% {color: #E61C2B}
+    60% {color: #FF0400}
+    70% {color: #DA291C}
+    80% {color: #FF2400}
+    90% {color: #FF0000}
+    100% {color: #800000}
 }
 /* question mark tooltip */
 .tooltip {
