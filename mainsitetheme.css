@@ -212,29 +212,6 @@ hr {
             border-top: 1px solid rgba(255, 255, 255, 0.4);
         }
 /* Toast Snack bar */
-
-How TO - Snackbar / Toast
-Learn how to create a snackbar / toast with CSS and JavaScript.
-
-Snackbar / Toast
-Snackbars are often used as tooltips/popups to show a message at the bottom of the screen.
-
-Click on the button to show the snackbar. It will disappear after 3 seconds.
-
-Create a Snackbar
-Step 1) Add HTML:
-Example
-<!-- Use a button to open the snackbar -->
-<button onclick="myFunction()">Show Snackbar</button>
-
-<!-- The actual snackbar -->
-<div id="snackbar">Some text some message..</div>
-ADVERTISEMENT
-
-Step 2) Add CSS:
-Style the snackbar and add animations:
-
-Example
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
   visibility: hidden; /* Hidden by default. Visible on click */
