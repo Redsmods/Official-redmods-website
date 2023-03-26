@@ -278,3 +278,34 @@ hr {
   }
 }
 /* toast */
+.toast-message{
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  width: 400px;
+  font-size: 16px;
+  transition: all .5s;
+  z-index: 9999;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+  @media (max-width: 424px) {
+    width: calc(100% - 20px);
+  }
+  &.success{
+    background: #64DD17;
+  }
+  &.danger{
+    background: #F44336;
+  }
+  .message{
+    color: #fff;
+    padding: 20px 30px;
+    text-align:center;
+  }
+    &:hover{
+      opacity: 0.6;
+    }
+  }
+}
