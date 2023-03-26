@@ -78,3 +78,4 @@ function ShowToast() {
   // After 3 seconds, remove the show class from DIV
   setTimeout(ShowToast(){ x.className = x.className.replace("show", ""); }, 3000);
 }
+// https://codepen.io/imprakash/pen/GgNMXO
