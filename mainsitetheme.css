@@ -90,22 +90,22 @@ button {
       #linkopenme{
          color: lightblue;
       }
-      #redrainbow
-         -webkit-animation: animatedBackground_red 3s linear infinite alternate;
+      #redrainbow{
+         -webkit-animation: animatedBackground_b 3s linear infinite alternate;
       }
 /* official rainbows for red */
-@keyframes animatedBackground_red{
-    0% {color: #FF0000}
-    10% {color: #DC143C}
-    20% {color: #B22222}
-    30% {color: #E9967A}
-    40% {color: #FF0800}
-    50% {color: #E61C2B}
-    60% {color: #FF0400}
-    70% {color: #DA291C}
-    80% {color: #FF2400}
-    90% {color: #FF0000}
-    100% {color: #800000}
+@keyframes animatedBackground_b{
+    0% {color: #ff0000}
+    10% {color: #a41212}
+    20% {color: #f45b5b}
+    30% {color: #5a2b2b}
+    40% {color: #f33c3c}
+    50% {color: #ff5151}
+    60% {color: #711313}
+    70% {color: #ff0000}
+    80% {color: #ff6464}
+    90% {color: #751717}
+    100% {color: #ff0000}
 }
 /* question mark tooltip */
 .tooltip {
