@@ -286,7 +286,7 @@ hr {
 .popup {
   margin: 70px auto;
   padding: 20px;
-  background: #fff;
+  background: #191919;
   border-radius: 5px;
   width: 30%;
   position: relative;
@@ -294,7 +294,7 @@ hr {
 }
 .popup h2 {
   margin-top: 0;
-  color: #333;
+  color: #fff;
   font-family: Tahoma, Arial, sans-serif;
 }
 .popup .close {
