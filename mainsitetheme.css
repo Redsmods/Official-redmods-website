@@ -257,3 +257,24 @@ hr {
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }
+/* Changelog dialog */
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #aaa;
+}
+
+.modal__close:before {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+	
+  .modal__inner {
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+  }
+}
