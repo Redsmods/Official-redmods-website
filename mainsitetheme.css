@@ -336,10 +336,6 @@ hr {
     font-size: 1.5rem;
 }
 
-.nav div.logo a:hover {
-    color: #00E676;
-}
-
 .nav div.main_list {
     height: 65px;
     float: right;
@@ -366,8 +362,4 @@ hr {
     color: #fff;
     line-height: 65px;
     font-size: 1.4rem;
-}
-
-.nav div.main_list ul li a:hover {
-    color: #00E676;
 }
