@@ -1,4 +1,3 @@
-/* table */
 article {
   width:25%;
   max-width:2500px;
@@ -51,10 +50,10 @@ td.default {
     display:table-cell !important;
   }
   td,th {
-    width: 330px;
+    width: 290px;
   
   }
   td+td, th+th {
-    width: auto;
+    width: 250px;
   }
 }
