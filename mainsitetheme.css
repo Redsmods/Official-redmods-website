@@ -462,7 +462,7 @@ hr {
 }
 
 input:checked + .slider {
-  background-color: #50bfe6;
+  background-color: red;
 }
 
 input:focus + .slider {
