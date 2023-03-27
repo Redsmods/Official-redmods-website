@@ -3,6 +3,7 @@ itbody{
 	padding: 0;
 	background: url(redbg.jpg) no-repeat;
 	background-size: cover;
+	padding:14px;
 }
 .reds_box{
 	width: 450px;
