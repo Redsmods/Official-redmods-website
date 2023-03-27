@@ -27,9 +27,6 @@ td,th {
     solid #191919;
   padding:10px; 
   empty-cells:show; }
-td,th {
-  text-align:left;
-}
 td+td, th+th {
   text-align:center;
   display:none;
