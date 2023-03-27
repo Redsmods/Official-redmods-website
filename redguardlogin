@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <!-- php code starts here -->
+
+      <!-- php code stops here -->
+<head>
+<meta name="keywords" content=""/>
+<meta name="keywords" content="Red Kik, Crimson Bot, kik mod, kik mods,red kik download, Red Mods, red mods, crimson bot, Kik Bot, Discord Bot, Telegram Bot"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RedGuard Login" />
+    <meta name="author" content="Red"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="revisit-after" content="7 days"/>
+	<meta charset="utf-8">
+		<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+		<link rel="stylesheet" href="mainsitetheme.css">
+			<title>RedGuard</title>
+			</head>
+      <body>
+      				<div class="reds_box"
+<img src="redsprofile.jpg" alt="" class="box-img">
+       <h1>Login</h1>
+				<hr>
+        <form id="form" action="#">
+        <div>
+            <input type="text" placeholder="Username..." id="username" name="username">
+        </div>
+        <div>
+            <input type="password" placeholder="Password..." id="password" name="password">
+        </div>
+        <button id="loginbutton" disabled>Login to RedGuard</button>
+    </form>
+<br>				
+<button id="buttonround"><strong><a href="index.html">Back</a></strong></button></br>
+<br>
+			<body>
+      <script src="panellogin.js"></script>
+					   </body>
+             <!-- Main Page Stops Here -->
+					</html>
