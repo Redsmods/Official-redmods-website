@@ -5,12 +5,13 @@ article {
   height:150px;
   position:center;
 }
-.table { 
+table { 
   border-collapse:collapse;
   background: #191919;
   table-layout:fixed; 
   position:center;
   width:100%;
+  margin: 0 auto;
 }
 th { 
   background:#322121; 
