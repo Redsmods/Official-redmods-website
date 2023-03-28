@@ -8,6 +8,7 @@ article {
 .table { 
   margin: 0 auto;
   width: 300px;
+  table-layout: fixed;
 }
 th { 
   background:#322121; 
