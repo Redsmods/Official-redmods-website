@@ -1,6 +1,5 @@
-$( document ).ready( function() {
-    $('.tosmodal').addClass('loaded');
-    $('.tos-close, .btn').click( function() {
-        $('.tosmodal').removeClass('loaded');
-    });
-});
+function openPopup() {
+  window.location.hash = 'openModal';
+}
+
+window.onload = openPopup;
