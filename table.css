@@ -6,8 +6,6 @@ article {
   position:center;
 }
 .table { 
-  margin-left: auto;
-  margin-right: auto;
   position:center;
   table-layout: fixed;
   border-collapse:collapse;
