@@ -1,6 +1,12 @@
 .modal:target:before {
     display: none;
 }
+.modal:target:before, .modal.loaded:before { 
+    ... 
+}
+.modal:target .modal-dialog, .modal.loaded .modal-dialog { 
+    ... 
+}
 .modal:before {
     content:"";
     display: block;
