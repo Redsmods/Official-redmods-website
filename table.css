@@ -6,10 +6,11 @@ article {
   position:center;
 }
 .table { 
-  position:center;
-  table-layout: fixed;
   border-collapse:collapse;
   background: #191919;
+  table-layout:fixed; 
+  position:center;
+  width:100%;
 }
 th { 
   background:#322121; 
