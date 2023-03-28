@@ -9,6 +9,8 @@ article {
   margin: 0 auto;
   width: 300px;
   table-layout: fixed;
+  border-collapse:collapse;
+  background: #191919;
 }
 th { 
   background:#322121; 
