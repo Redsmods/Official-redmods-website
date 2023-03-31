@@ -1,0 +1,23 @@
+.owl-nav {
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+}
+.owl-prev {
+  display:block;
+  float: left;
+  margin-left: -50px;
+  width: 50px;
+  height: 50px;
+}
+.owl-next {
+  float:right;
+  margin-right: -50px;
+  display:block;
+  height: 50px;
+  width: 50px;
+}
+
+.card-title { color: #18abd0; }
+
+.card-img-top img { max-height: 70px; max-width: 70px; margin: auto; }
