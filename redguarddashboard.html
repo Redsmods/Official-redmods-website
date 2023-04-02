@@ -49,6 +49,7 @@
     </tr>
     <tr>
       <td>IP:<span class="ip"></span></td>
+      <td id="deviceinfo"></td>
 </table>
 	<p><center><a href="contact.html"><h5>Report Bugs / Contact red for help</h5></a></center></p>
 			<body>
@@ -59,6 +60,16 @@
       });
     });
   </script>
+
+	<script type="text/javascript">
+		var isMobile = /iPhone|iPad|iPod|Android|Tablet/i.test(navigator.userAgent);
+		var element = document.getElementById('deviceinfo');
+		if (isMobile) {
+  			element.innerHTML = "<span>You are using: </span> Mobile";
+		} else {
+			element.innerHTML = "<span>You are using: </span> Desktop";
+		}
+	</script>
 					   </body>
              <!-- Main Page Stops Here -->
 					</html>
