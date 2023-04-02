@@ -48,20 +48,19 @@
       <th>status</th>
     </tr>
     <tr>
-      <td>IP:<span class="ip"></span></td>
+      <td>IP:<span id="ipinfo"></span></td>
       <td>DEVICE:<span id="deviceinfo"></span></td>
 <td>VPN:<span></span></td>
 <td>LICENSE:<span></span></td>
 </table>
 	<p><center><a href="contact.html"><h5>Report Bugs / Contact red for help</h5></a></center></p>
 			<body>
-      <script type="text/javascript">
-    $(document).ready(function() {
-      $.getJSON("https://api.ipify.org/?format=json", function(e) {
-        $('.ip').text(e.ip);
-      });
-    });
-  </script>
+      <script> $.getJSON("https://api.ipify.org?format=json", function(data) {
+        $("#ipinfo").html(data.ip);
+
+    })
+
+    </script>
 
 	<script type="text/javascript">
 		var isMobile = /iPhone|iPad|iPod|Android|Tablet/i.test(navigator.userAgent);
