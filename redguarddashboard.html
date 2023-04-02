@@ -57,8 +57,12 @@
 <tr>
       <td>DEVICE:<span id="deviceinfo"></span></td>
 </tr>
+<tr>
 <td>VPN:<span></span></td>
+</tr>
+<tr>
 <td>LICENSE:<span></span></td>
+</tr>
 </table>
 	<p><center><a href="contact.html"><h5>Report Bugs / Contact red for help</h5></a></center></p>
 			<body>
@@ -73,9 +77,9 @@
 		var isMobile = /iPhone|iPad|iPod|Android|Tablet/i.test(navigator.userAgent);
 		var element = document.getElementById('deviceinfo');
 		if (isMobile) {
-  			element.innerHTML = "<span>You are using: </span> Mobile";
+  			element.innerHTML = "Mobile";
 		} else {
-			element.innerHTML = "<span>You are using: </span> Desktop";
+			element.innerHTML = "Desktop";
 		}
 	</script>
 					   </body>
