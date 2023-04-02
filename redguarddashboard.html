@@ -13,6 +13,7 @@
 	<meta charset="utf-8">
 		<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
 		<link rel="stylesheet" href="mainsitetheme.css">
+<link rel="stylesheet" href="table.css">
 			<title>RedGuard</title>
 			</head>
       <body>
@@ -42,9 +43,22 @@
 <button id="buttonround"><strong><a href="redguardlogin.html">Logout</a></strong></button></br>
 <br>
   <p><center><h5>Client Info</h5></center></p>
+<table>
+    <tr>
+      <th>status</th>
+    </tr>
+    <tr>
+      <td>IP:<span class="ip"></span></td>
+</table>
 	<p><center><a href="contact.html"><h5>Report Bugs / Contact red for help</h5></a></center></p>
 			<body>
-      <script src="panellogin.js"></script>
+      <script type="text/javascript">
+    $(document).ready(function() {
+      $.getJSON("https://api.ipify.org/?format=json", function(e) {
+        $('.ip').text(e.ip);
+      });
+    });
+  </script>
 					   </body>
              <!-- Main Page Stops Here -->
 					</html>
