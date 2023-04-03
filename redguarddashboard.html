@@ -52,7 +52,10 @@
       <th>status</th>
     </tr>
     <tr>
-      <td>IP:<span id="ipinfo"></span></td>
+      <td>Public IP:<span id="publicipinfo"></span></td>
+</tr>
+<tr>
+      <td>Private IP:<span id="privateipinfo"></span></td>
 </tr>
 <tr>
       <td>DEVICE:<span id="deviceinfo"></span></td>
@@ -67,7 +70,7 @@
 	<p><center><a href="contact.html"><h5>Report Bugs / Contact red for help</h5></a></center></p>
 			<body>
       <script> $.getJSON("https://api.ipify.org?format=json", function(data) {
-        $("#ipinfo").html(data.ip);
+        $("#publicipinfo").html(data.ip);
 
     })
 
