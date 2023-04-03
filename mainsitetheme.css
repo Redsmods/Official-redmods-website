@@ -19,9 +19,9 @@ itbody{
 	font-family: 'Century Gothic',sans-serif;
 }
 .reds_box-img{
-	border-radius: 10%;
-	width: 10px;
-	height: 10px;
+border-radius: 50%;
+	width: 200px;
+	height: 200px;
 }
 .reds_box h1{
 	font-size: 40px;
