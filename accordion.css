@@ -4,16 +4,17 @@
 	left: 50%;
 	margin: 150px 0;
 	transform: translate(-50%, 0);
-	max-width: 300px;
+	max-width: 500px;
     padding: 10px 20px 20px;
 	border-radius: 5px;
 }
+
 ul {
 	list-style: none;
 	perspective: 900;
 	padding: 0 20px 10px;
     margin: 0;
-    background-color: #fff;
+    background-color: #643232;
 	border-radius: 5px;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 
 	0 2px 2px 0 rgba(255, 255, 255, 0.19);
@@ -24,7 +25,7 @@ ul li {
 	margin: 0;
 	padding-bottom: 4px;
 	padding-top: 18px;
-    border-top: 1px dotted #dce7eb;
+
 }
 
 ul li:nth-child(1){ border:none; }
@@ -47,7 +48,7 @@ ul li .fas{
 ul li .arrow:before, ul li .arrow:after {
 	content: "";
 	position: absolute;
-	background-color: #f6483b;
+	background-color: white;
 	width: 3px;
 	height: 9px;
 }
