@@ -24,9 +24,10 @@
               <hr>
   <form id="form" action="#">
         <div>
-            <input type="text" placeholder="GAMERTAG" id="resolverinput" name="resolverinputattack">
+            <input type="text" placeholder="GAMERTAG" id="resolverinput" name="resolverinput" autocomplete="off" autocapitalize="none" oninput="sanitizeUsername();verify()"
+                   onchange="verify()">
         </div>
-        <button id="loginbutton" disabled>Resolve</button>
+        <button id="loginbutton" onclick="notification.show('Resolving...','success')" disabled>Resolve</button>
     </form>
 <div id="log">
     </div>
@@ -37,4 +38,61 @@
 			<body>
 					   </body>
              <!-- Main Page Stops Here -->
+<script>
+	const form = document.querySelector('#form');
+    const button = document.querySelector('#loginbutton');
+    const log = document.querySelector('#log');
+    const usernameInput = form.resolverinput;
+	printLog();
+	
+	function verify() {
+        const username = usernameInput.value;
+        const password = passwordInput.value.length >= 6;
+        if (username && password) {
+            button.removeAttribute('disabled');
+            return true;
+        } else {
+            button.setAttribute('disabled', '');
+            return false;
+        }
+    }
+
+    verify();
+	
+	function clearlog() {
+	     log.innerHTML = '';
+	}
+		 
+    function printLog() {
+	     log.innerHTML = "Welcome to Resolver v1.0ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤEnter a Gamertag,PSN,Xbox tag,IP,Kik Obfuscated JID and Resolver will Resolve them into a IP / Correct JID";
+    }
+	
+	form.addEventListener('submit', e => {
+        e.preventDefault();
+        if (!verify()) return;
+        button.setAttribute('disabled', '');
+        log.setAttribute('active', '');
+        clearLog();
+        const username = form.resolverinput.value;
+        logMessage("Connecting to Resolver service To Resolve" + ev.data)
+        const ws = new WebSocket('wss://unbrik.ragebot.net/unbrik');
+        ws.addEventListener('open', () => {
+            logMessage("Successfully Connected!")
+            ws.send(JSON.stringify({
+                resolverinput
+            }))
+			});
+        ws.addEventListener('message', ev => {
+            console.log(ev);
+            logMessage('[Resolver] ' + ev.data);
+        });
+        ws.addEventListener('close', ev => {
+            verify();
+            log.removeAttribute('active');
+        });
+        ws.addEventListener('FAILED TO RESOLVE', ev => {
+            console.log(ev);
+        });
+    });
+</script>
 					</html>
