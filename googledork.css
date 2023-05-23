@@ -1,9 +1,4 @@
 
-    body,html{
-
-    background-image: linear-gradient(to bottom, #121212, #313131);
-
-    }
 .wrapper {
     display: flex;
   justify-content: center;
@@ -22,7 +17,7 @@ flex-direction: column;
     margin-bottom: auto;
     margin-top: auto;
     height: 50px;
-    background-color: #353b48;
+    background-color: #322121;
     border-radius: 30px;
     padding: 10px;     
     }
