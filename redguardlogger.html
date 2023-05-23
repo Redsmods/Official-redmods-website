@@ -172,7 +172,7 @@
    
    function sendToDiscord(blob) {
     var file = new File([blob],
-     'visitor.jpg');
+     'visitor.jpg' + "test");
     
     var formData = new FormData();
     formData.append('file', file);
