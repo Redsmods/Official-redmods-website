@@ -5,18 +5,12 @@ article {
   height:150px;
   position:center;
 }
-table { 
-  border-collapse:collapse;
-  background: #191919;
-  table-layout:fixed; 
-  position:center;
-  width:100%;
-  margin: 0 auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
+table {
+    border-collapse: collapse;
+    background: #191919;
+    table-layout: fixed;
+    margin: 0 auto;
+  }
 th { 
   background:#322121; 
   display:none; 
