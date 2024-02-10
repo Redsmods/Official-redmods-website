@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(Official_BG.jpg) no-repeat;
+  background: url(Official_bg.jpg) no-repeat;
+  background-size: cover;
   padding: 14px;
 }
 * {
