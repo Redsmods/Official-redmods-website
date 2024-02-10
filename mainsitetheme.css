@@ -4,9 +4,6 @@ body {
   background: url(Official_BG.jpg) no-repeat;
   padding: 14px;
 }
-* {
-  box-sizing:border-box;
-}
 .reds_box{
 	width: 500px;
 	background:#643232;
