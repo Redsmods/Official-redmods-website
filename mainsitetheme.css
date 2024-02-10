@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(Official_BG.jpg) no-repeat;
-  background-size: cover;
+
   padding: 14px;
 }
 * {
@@ -10,7 +9,7 @@ body {
 }
 .reds_box{
 	width: 500px;
-	background: url(redbg.jpg) no-repeat;
+	background: url(Official_BG.jpg) no-repeat;
 	padding: 40px;
 	text-align: center;
 	margin: auto;
