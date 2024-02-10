@@ -1,5 +1,7 @@
 body {
-  background: url(Official_bg.jpg) no-repeat;
+  margin: 0;
+  padding: 0;
+  background: url(Official_BG.jpg) no-repeat;
   background-size: cover;
 }
 * {
