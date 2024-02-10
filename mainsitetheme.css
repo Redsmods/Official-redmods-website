@@ -4,16 +4,17 @@ body {
   background: url(Official_BG.jpg) no-repeat;
   background-size: cover;
 }
-.reds_box{
+.reds_box {
 	width: 500px;
-	background:#643232;
+	background: rgba(100, 50, 50, 0.5);
 	padding: 40px;
 	text-align: center;
 	margin: auto;
 	margin-top: 5%;
 	color: white;
-	font-family: 'Century Gothic',sans-serif;
+	font-family: 'Century Gothic', sans-serif;
 }
+
 .reds_box-img{
 border-radius: 50%;
 	width: 200px;
