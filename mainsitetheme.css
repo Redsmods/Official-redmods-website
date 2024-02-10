@@ -1,7 +1,7 @@
 itbody{
 	margin: 0;
 	padding: 0;
-	background: url(redbg.jpg) no-repeat;
+	background: url(Official_BG.jpg) no-repeat;
 	background-size: cover;
 	padding:14px;
 }
@@ -10,7 +10,7 @@ itbody{
 }
 .reds_box{
 	width: 500px;
-	background: url(Official_BG.jpg) no-repeat;
+	background: url(redbg.jpg) no-repeat;
 	padding: 40px;
 	text-align: center;
 	margin: auto;
