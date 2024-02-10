@@ -15,35 +15,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 <script src="navbar.js"></script>
 	<script>
-function showDownloadPopup() {
-  // Create a dialog element
-  var dialog = document.createElement("dialog");
-  
-  // Set the dialog title
-  dialog.innerHTML = "<h2>Download Options</h2>";
-  
-  // Create the options
-  var option1 = document.createElement("button");
-  option1.innerHTML = "Option 1";
-  
-  var option2 = document.createElement("button");
-  option2.innerHTML = "Option 2";
-  
-  // Create the help and close buttons
-  var helpButton = document.createElement("button");
-  helpButton.innerHTML = "Help";
-  
-  var closeButton = document.createElement("button");
-  closeButton.innerHTML = "Close";
-  
-  // Append the elements to the dialog
-  dialog.appendChild(option1);
-  dialog.appendChild(option2);
-  dialog.appendChild(helpButton);
-  dialog.appendChild(closeButton);
-  
-  // Show the dialog
-  dialog.showModal();
+$(function(){
+  $(document).keypress(function(e) {
+    cwrite(e.which,'Keypress event');
+    if(e.which==120) custom_dialog_toggle('Keypress x','You opened this window by pressing x');
+  });
+});
+function custom_dialog_toggle(title,text,buttons) {
+  if(typeof title !=='undefined') $('#dlg-header').html(title);
+  if(typeof text !=='undefined') $('#dlg-content').html(text);
+  cwrite('Current state: '+$('#dialog_state').prop("checked"),'custom_dialog_toggle');
+  $('#dialog_state').prop("checked", !$('#dialog_state').prop("checked"));
+}
+// Console logging function for debugging
+// cwrite(str, title)
+//      str:              string to be appended to console
+//      title (optional): title of the string
+// (c)  Tuomas Hatakka 2015
+//      http://tuomashatakka.fi
+function cwrite(str,title) {
+  var ce = $('#console');
+  var sg = "<p>";
+  if(typeof title !=='undefined') sg = sg+"<em>"+title+"</em> ";
+  sg = sg+str+"</p>";
+  ce.prepend(sg);
+  //if(ce.children("p").length>6) ce.children("p").first().remove();
 }
 </script>
 			<title>Red Mods</title>
