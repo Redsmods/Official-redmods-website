@@ -32,7 +32,9 @@
 <br>
 <button id="buttonround"><strong><a href="crimsoncross.html ">CrimsonCross</a></strong></button></br>
 <br>
-<button id="buttonround"><strong><a href="redcord.html ">RedCord</a></strong></button></br>					
+<button id="buttonround"><strong><a href="redcord.html ">RedCord</a></strong></button></br>
+<br>
+<button id="buttonround" onclick="showDownloadPopup()"><strong>Download Popup</strong></button></br>					
 <br>
 <br>
 <p><center><a href="contact.html"><h5>Click Me To Contact Red.</h5></a></center></p>
@@ -41,6 +43,38 @@
 <br>
 <br>
 <br>
-<br>				
+<br>
+<script>
+function showDownloadPopup() {
+  // Create a dialog element
+  var dialog = document.createElement("dialog");
+  
+  // Set the dialog title
+  dialog.innerHTML = "<h2>Download Options</h2>";
+  
+  // Create the options
+  var option1 = document.createElement("button");
+  option1.innerHTML = "Option 1";
+  
+  var option2 = document.createElement("button");
+  option2.innerHTML = "Option 2";
+  
+  // Create the help and close buttons
+  var helpButton = document.createElement("button");
+  helpButton.innerHTML = "Help";
+  
+  var closeButton = document.createElement("button");
+  closeButton.innerHTML = "Close";
+  
+  // Append the elements to the dialog
+  dialog.appendChild(option1);
+  dialog.appendChild(option2);
+  dialog.appendChild(helpButton);
+  dialog.appendChild(closeButton);
+  
+  // Show the dialog
+  dialog.showModal();
+}
+</script>			
 					   </body>
 					</html>
