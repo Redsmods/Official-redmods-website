@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: url(Official_BG.jpg) no-repeat;
-  padding: 14px;
+  background-size: cover;
 }
 .reds_box{
 	width: 500px;
