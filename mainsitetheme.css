@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-
+  background: url(Official_BG.jpg) no-repeat;
   padding: 14px;
 }
 * {
@@ -9,7 +9,7 @@ body {
 }
 .reds_box{
 	width: 500px;
-	background: url(Official_BG.jpg) no-repeat;
+	background:#643232;
 	padding: 40px;
 	text-align: center;
 	margin: auto;
@@ -60,9 +60,6 @@ color:white;
       #red {
          color: red;
       }
-        body {
-   background:#643232;
-  }
 button {
             width: 100%;
             padding: 12px;
