@@ -1,0 +1,39 @@
+th {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  color: 1px solid red;
+}
+td {
+  
+}
+td.full {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffca36;
+}
+
+td.available {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  color: #17b159;
+}
+td.unavailable {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  color: #19ac86;
+}
+td.username {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  color: #1f7fff;
+}
+tr {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 0 auto;
+}
