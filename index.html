@@ -14,34 +14,6 @@
 		<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 <script src="navbar.js"></script>
-	<script>
-$(function(){
-  $(document).keypress(function(e) {
-    cwrite(e.which,'Keypress event');
-    if(e.which==120) custom_dialog_toggle('Keypress x','You opened this window by pressing x');
-  });
-});
-function custom_dialog_toggle(title,text,buttons) {
-  if(typeof title !=='undefined') $('#dlg-header').html(title);
-  if(typeof text !=='undefined') $('#dlg-content').html(text);
-  cwrite('Current state: '+$('#dialog_state').prop("checked"),'custom_dialog_toggle');
-  $('#dialog_state').prop("checked", !$('#dialog_state').prop("checked"));
-}
-// Console logging function for debugging
-// cwrite(str, title)
-//      str:              string to be appended to console
-//      title (optional): title of the string
-// (c)  Tuomas Hatakka 2015
-//      http://tuomashatakka.fi
-function cwrite(str,title) {
-  var ce = $('#console');
-  var sg = "<p>";
-  if(typeof title !=='undefined') sg = sg+"<em>"+title+"</em> ";
-  sg = sg+str+"</p>";
-  ce.prepend(sg);
-  //if(ce.children("p").length>6) ce.children("p").first().remove();
-}
-</script>
 			<title>Red Mods</title>
 			</head>
       <!-- Main Page Starts Here -->
@@ -62,30 +34,8 @@ function cwrite(str,title) {
 <br>
 <button id="buttonround"><strong><a href="redcord.html ">RedCord</a></strong></button></br>
 <br>
-<button id="buttonround" onclick="showDownloadPopup()"><strong><a href="redcord.html ">Download popup</a></strong></button></br>				
+<button id="buttonround"><strong><a href="redcord.html ">Download popup</a></strong></button></br>				
 <br>
-
-					
-<input type="checkbox" name="dialog_state" id="dialog_state" class="dialog_state">
-<div id='dialog'>
-  <label id="dlg-back" for="dialog_state"></label>
-  <div id='dlg-wrap'>
-    <label id="dlg-close" for="dialog_state"><i class="icon ion-ios-close-empty"></i></label>
-    <h2 id='dlg-header'>Are you sure?</h2>
-    <div id='dlg-content'>You are about to kill a puppy, that's some serious shit. Have you really thought this through?</div>
-    <div id='dlg-prompt'>
-      <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
-      <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
-    </div>
-  </div>
-</div>
-<main id='main' class='main_area'>
-  <div class='center'>
-    <label class="button" for="dialog_state"><i class="icon ion-ios-upload-outline
-      "></i> Open the dialog</label>
-  </div>
-<div id='console'></div>
-</main>					
 <br>
 <p><center><a href="contact.html"><h5>Click Me To Contact Red.</h5></a></center></p>
 </br>
