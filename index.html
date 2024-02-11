@@ -12,50 +12,6 @@
     <meta name="revisit-after" content="7 days"/>
 	<meta charset="utf-8">
 		<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
-	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-  // Functions to open and close a modal
-  function openModal($el) {
-    $el.classList.add('is-active');
-  }
-
-  function closeModal($el) {
-    $el.classList.remove('is-active');
-  }
-
-  function closeAllModals() {
-    (document.querySelectorAll('.modal') || []).forEach(($modal) => {
-      closeModal($modal);
-    });
-  }
-
-  // Add a click event on buttons to open a specific modal
-  (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
-    const modal = $trigger.dataset.target;
-    const $target = document.getElementById(modal);
-
-    $trigger.addEventListener('click', () => {
-      openModal($target);
-    });
-  });
-
-  // Add a click event on various child elements to close the parent modal
-  (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
-    const $target = $close.closest('.modal');
-
-    $close.addEventListener('click', () => {
-      closeModal($target);
-    });
-  });
-
-  // Add a keyboard event to close all modals
-  document.addEventListener('keydown', (event) => {
-    if(e.key === "Escape") {
-      closeAllModals();
-    }
-  });
-});
-	</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 <script src="navbar.js"></script>
 			<title>Red Mods</title>
@@ -76,13 +32,7 @@
 <br>
 <button id="buttonround"><strong><a href="crimsoncross.html ">CrimsonCross</a></strong></button></br>
 <br>
-<button id="buttonround"><strong><a href="redcord.html ">RedCord</a></strong></button></br>
-<br>
-<button id="buttonround"><strong><a href="redcord.html ">Download popup</a></strong></button></br>				
-<br>
-<button class="js-modal-trigger" data-target="modal-js-example">
-  Open JS example modal
-</button>					
+<button id="buttonround"><strong><a href="redcord.html ">RedCord</a></strong></button></br>					
 <br>
 <p><center><a href="contact.html"><h5>Click Me To Contact Red.</h5></a></center></p>
 </br>
@@ -91,17 +41,5 @@
 <br>
 <br>
 <br>
-<div id="modal-js-example" class="modal">
-  <div class="modal-background"></div>
-
-  <div class="modal-content">
-    <div class="box">
-      <p>Modal JS example</p>
-      <!-- Your content -->
-    </div>
-  </div>
-
-  <button class="modal-close is-large" aria-label="close"></button>
-</div>			
 					   </body>
 					</html>
