@@ -118,6 +118,6 @@ hr {
 
 /* Dialog */
 #dialog {
-  background-color: #191919;
-  color: white;
+  background: rgb(0 0 0 / 50%);
+	color:white;
 }
