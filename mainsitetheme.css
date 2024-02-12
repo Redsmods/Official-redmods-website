@@ -2,8 +2,9 @@ body {
   margin: 0;
   padding: 0;
   background: url(Official_BG.jpg) no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center bottom;
+  background-attachment: fixed; /* here */
 }
 .reds_box {
 	width: 500px;
